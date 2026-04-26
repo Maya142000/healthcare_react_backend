@@ -11,20 +11,20 @@ import apiRouter from "./api/v1/index.js"
 const app = express()
 
 app.use(morgan("dev"));
-app.use(cors());
 app.use(express.json({ limit : "50mb" }));
 app.use(compression());
 app.use(urlencoded({ extended: true}))
 app.use(helmet({ crossOriginResourcePolicy: false }));
 
 const corsOptions = {
-    origin: ['http://localhost:5173'], // allow dev & prod
+    origin: ['http://localhost:5173', 'https://your-netlify-app.netlify.app'], // allow dev & prod
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
 }
 
-app.use(cors(corsOptions))
+app.use(cors(corsOptions));
+// app.options("/*", cors(corsOptions));
 
 app.use(( req, res, next ) => {
     res.setTimeout( 360000, () => {
