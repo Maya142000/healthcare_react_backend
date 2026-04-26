@@ -6,7 +6,7 @@ import connectDB from "./config/dbconfig.js";
 import { startCronJobs } from "./cron/cronJobs.js";
 startCronJobs();
 
-const { PORT } = process.env;
+const PORT = process.env.PORT || 5000;
 
 async function startServer() {
     try {
