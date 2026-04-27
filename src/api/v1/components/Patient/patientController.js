@@ -150,7 +150,7 @@ export const getPatientById = async ( req, res ) => {
                     mobileNo: getPatient.mobileNo,
                     email: getPatient.email,
                     age: getPatient.age,
-                    doctor_image: getPatient.patient_image,
+                    patient_image: getPatient.patient_image,
                 } 
             });
         }
