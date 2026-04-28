@@ -17,7 +17,7 @@ app.use(urlencoded({ extended: true}))
 app.use(helmet({ crossOriginResourcePolicy: false }));
 
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://healthcare-react-backend.onrender.com', "https://darling-gaufre-29d494.netlify.app"], // allow dev & prod
+    origin: ['http://localhost:5173', 'https://healthcare-react-6e4e.onrender.com', "https://darling-gaufre-29d494.netlify.app"], // allow dev & prod
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
