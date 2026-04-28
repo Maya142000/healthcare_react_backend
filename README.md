@@ -115,10 +115,10 @@ DevUrl=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/healthcare
 PORT=5000
 
 # Public base URL (used for PDF/image URLs in emails)
-BASE_URL=https://your-backend-domain.onrender.com
+BASE_URL=https://healthcare-react-backend.onrender.com
 
 # JWT Secret Key
-SECRET_KEY=your_secret_key_here
+SECRET_KEY=Id0ntKn0W
 
 
 -------------------------------------------------------------------------------------
@@ -197,7 +197,7 @@ Defined in `src/cron/cronJobs.js` using `node-cron`. A scheduled job runs every 
 The server allows cross-origin requests from the following origins:
 
 - `http://localhost:5173` (local Vite dev server)
-- `https://your-netlify-app.netlify.app`
+- `https://healthcare-react-6e4e.onrender.com`
 - `https://darling-gaufre-29d494.netlify.app`
 
 Allowed methods: `GET, POST, PUT, PATCH, DELETE, OPTIONS`  
